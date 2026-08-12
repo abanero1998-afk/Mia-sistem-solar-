@@ -1,0 +1,13 @@
+mia-solare-/
+├── app/
+│ ├── layout.tsx
+│ ├── page.tsx 
+│ └── api/mia/route.ts
+├── components/
+│ ├── Sun.tsx
+│ └── Planet.tsx
+├── lib/
+│ ├── mia-core.ts
+│ └── ristorante.ts
+├── package.json
+└──.env.local
