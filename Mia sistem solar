@@ -11,3 +11,37 @@ mia-solare-/
 │ └── ristorante.ts
 ├── package.json
 └──.env.local
+{
+  "name": "mia-solar",
+  "dependencies": {
+    "next": "15.0.0",
+    "react": "18.3.1",
+    "framer-motion": "^11.0.0",
+    "@react-three/fiber": "^8.15.0",
+    "@react-three/drei": "^9.88.0",
+    "groq-sdk": "^0.4.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  }
+}
+"use client"
+export default function Home() {
+  return (
+    <main className="w-full h-screen bg-[#F5F5F7] flex items-center justify-center">
+      <div className="backdrop-blur-2xl bg-white/40 border border-white/30 rounded-full w-[400px] h-[400px] relative">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-yellow-400 rounded-full shadow-2xl animate-pulse">SOLE</div>
+        {/* Qui mettiamo i 5 pianeti dopo */}
+      </div>
+    </main>
+  )
+}export default function RootLayout({ children }) {
+  return (
+    <html>
+      <body className="bg-white text-black">{children}</body>
+    </html>
+  )
+}
+
